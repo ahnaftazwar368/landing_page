@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  /* border: 2px solid black; */
+  /* color: white; */
+}
+
+body {
+  height: 100%;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background-color: #1F2937;
+  color: white;
+}
+
+/* Header of the page */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  height: 50px;
+  color: #E5E7EB;
+}
+
+.main-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+}
+
+.sections {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Introduction area of the page */
+
+.introduction {
+  background-color: ;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-text {
+  padding: 10px;
+}
+
+.intro-welcome {
+  color: #E5E7EB;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 15px;
+
+}
+
+.intro-para {
+  color: #E5E7EB;
+  font-size: 18px;
+  margin-bottom: 15px;
+
+}
+
+.message-me {
+  margin: 10px;
+}
+
+/* Projects Section */
+
+.project-info {
+  background-color: aliceblue;
+  height: 200px;
+}
+
+h1 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+/* Quote section */
+
+.skills {
+  background-color: #E5E7EB;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 15px
+}
+
+button {
+  border-radius: 7px;
+  color: white;
+  background-color: #789cd7;
+}
