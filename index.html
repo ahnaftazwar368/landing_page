@@ -6,40 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-  <div class="header">
-    <div class="main-name">Ahnaf Tazwar</div>
-    <div class="sections">
-      <ul>
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./index.html">Projects?</a></li>
-        <li><a href="./index.html">Contact</a></li>
-      </ul>
+  <div class="main-container" id="about">
+    <div class="header">
+      <div class="main-name">Ahnaf Tazwar</div>
+      <div class="sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects-container">Projects?</a></li>
+          <li><a href="#skills">"Skills"</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="introduction">
-    <div class="intro-text">
-      <div class="intro-welcome">Hi, I'm Ahnaf :)</div>
-      <div class="intro-para">Beginning my journey in software engineering for the years to come. </div>
-      <div class="intro-para">Let this site be somewhere to showcase the things I make.</div>  
-      <button class="message-me">message me</button>
+    <div class="introduction">
+      <div class="intro-text">
+        <div class="intro-welcome">Hi, I'm Ahnaf</div>
+        <div class="intro-para">I'm a second year student studying compsci and you should take me into your team >:)</div>
+        <div class="intro-para">*insert self-intro you've heard everywhere else and have used yourself*</div>
+        <div class="intro-para">Let this site be somewhere to (temporarily) showcase the things I make (I rushed through this yesterday lmaooo)</div>  
+        <!-- <button class="message-me">message me</button>  -->
+      </div>
     </div>
-  </div>
-  <div class="project-info">
-    <h3>Some Random Projects</h4>
-    <img src="" alt="project_1.png">
-    <img src="" alt="project_2.png">
-  </div>
-  <div class="skills"> 
-    <h1>Some technologies i have experience with</h1>
-  </div>
-  <div class="contact">
-    <h4>Message me or something!</h4>
-    <button class="message-me">hmu!</button>
-  </div>
-  <div class="footer">
-    <p>Copyright or something idk lmao</p>
+    <div class="project-container" id="projects-container">
+      <h3>Project(s)</h4>
+      <div class="image-container">
+        <img class="project-image" src="./project-example.png" alt="project_1.png">
+        <div class="project-info">
+          <ul class="project-flex">
+            <li>Test snippets of code in isolated environment without making temp files! (I swear its useful trust me bro)</li>
+            <li>Compile and run Javascript code with cracked module importing</li>
+            <li>Stylish VS Code dark theme editor area (because I didn't design it)</li>
+            <li>Display errors in preview window like a boss (totally elegent style, hire me btw)</li>
+            <li>There's more cool features to come (trust trust)</li>
+          </ul>
+          <button class="project-preview"><a target="_blank" href="https://ahnaftazwar368.github.io/web-editor/">Check it out!</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="skills" id="skills"> 
+      <h1>Some technologies I have experience with</h1>
+      <div class="dev-icons-container">
+        <i class="devicon-typescript-plain"></i>
+        <i class="devicon-react-original"></i>
+        <i class="devicon-express-original"></i>
+        <i class="devicon-cplusplus-plain"></i>
+        <i class="devicon-html5-plain"></i>
+        <i class="devicon-redux-original"></i>
+      </div>
+    </div>
+    <!-- <div class="contact">
+      <h4>Message me or something!</h4>
+      <button class="message-me">hmu!</button>
+    </div> -->
+    <div class="footer">
+      <p>Copyright or something idk lmao, hire me</p>
+    </div>
   </div>
 </body>
 </html>

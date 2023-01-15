@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-* {
-  /* border: 2px solid black; */
-  /* color: white; */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +11,11 @@ body {
   color: white;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header of the page */
 
 .header {
@@ -21,6 +24,10 @@ body {
   padding: 15px;
   height: 50px;
   color: #E5E7EB;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation: slide-down 1s ease-in-out;
 }
 
 .main-name {
@@ -33,12 +40,14 @@ body {
 .sections {
   display: flex;
   justify-content: flex-start;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* Introduction area of the page */
 
 .introduction {
-  background-color: ;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -56,14 +65,20 @@ body {
   font-size: 48px;
   font-weight: 900;
   margin-bottom: 15px;
-
+  animation: slide-down 3s ease-in-out;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .intro-para {
   color: #E5E7EB;
   font-size: 18px;
   margin-bottom: 15px;
-
+  animation: slide-down 1s ease-in-out;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .message-me {
@@ -72,23 +87,93 @@ body {
 
 /* Projects Section */
 
-.project-info {
+.project-container {
   background-color: aliceblue;
-  height: 200px;
-}
-
-h1 {
-  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  color: #1F2937;
+  padding-bottom: 40px;
+  animation: slide-in 0.5s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 h3 {
-  color: black;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bolder;
+  color: #1F2937;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* Quote section */
+.project-image {
+  /* height: auto; */
+  max-width: 45%;
+  /* display: block; */
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-flex {
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-preview {
+  border-radius: 7px;
+  color: white;
+  background-color: #789cd7;
+  align-self: center;
+  margin: 15px;
+  width: 30%;
+}
+
+/* Skills Area */
 
 .skills {
-  background-color: #E5E7EB;
+  background-color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  animation: slide-in-left 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  padding: 20px;
+}
+ .dev-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+
+h1 {
+  color: #E5E7EB;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+i {
+  font-size: 200px;
+  margin: 10px;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 30px;
+  font-size: small;
+  align-self: center;
 }
 
 a {
@@ -103,8 +188,40 @@ ul {
   gap: 15px
 }
 
-button {
-  border-radius: 7px;
-  color: white;
-  background-color: #789cd7;
+/* animations */
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
